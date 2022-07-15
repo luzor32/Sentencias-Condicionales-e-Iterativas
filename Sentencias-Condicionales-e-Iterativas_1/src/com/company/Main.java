@@ -6,12 +6,27 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Triangulo2();
         Triangulo1();
         Contar();
         MetodoFoo();
         NotaEstudiante();
         Precio();
         Mayor();
+    }
+
+    private static void Triangulo2() {
+        String caract="*";
+
+        for(int j=0; j<7; j++) {
+            caract="";
+            for (int i = 0; i < 7-j; i++) {
+                caract += "*";
+            }
+
+            System.out.println(caract);
+        }
+
     }
 
     private static void Triangulo1() {
@@ -134,6 +149,7 @@ public class Main {
         }else{
             System.out.println("los nuemeros son iguales");
         }
+
 
 
 
