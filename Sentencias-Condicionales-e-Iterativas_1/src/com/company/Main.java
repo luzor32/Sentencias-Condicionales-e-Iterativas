@@ -5,6 +5,10 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        Mayor();
+    }
+
+    private static void Mayor() {
         int num1=0, num2=0;
 
         Scanner entrada=new Scanner(System.in);
