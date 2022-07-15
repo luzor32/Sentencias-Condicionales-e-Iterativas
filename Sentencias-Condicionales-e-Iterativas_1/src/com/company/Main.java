@@ -6,11 +6,21 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Triangulo1();
         Contar();
         MetodoFoo();
         NotaEstudiante();
         Precio();
         Mayor();
+    }
+
+    private static void Triangulo1() {
+        String caract="*";
+        for(int i=0; i<7; i++){
+            System.out.println(caract);
+            caract+="*";
+        }
+
     }
 
     private static void Contar() {
@@ -124,6 +134,7 @@ public class Main {
         }else{
             System.out.println("los nuemeros son iguales");
         }
+
 
 
 
