@@ -5,6 +5,10 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        Precio();
+    }
+
+    private static void Precio() {
         String nom_prod = "";
         double precio = 0, precio_final = 0;
         int opcion = 0;
