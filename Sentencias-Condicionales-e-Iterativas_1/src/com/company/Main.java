@@ -6,10 +6,19 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Contar();
         MetodoFoo();
         NotaEstudiante();
         Precio();
         Mayor();
+    }
+
+    private static void Contar() {
+        for(int i=1; i<=10; i++){
+            System.out.println("numero " + i);
+
+        }
+
 
     }
 
@@ -115,6 +124,7 @@ public class Main {
         }else{
             System.out.println("los nuemeros son iguales");
         }
+
 
 
     }
