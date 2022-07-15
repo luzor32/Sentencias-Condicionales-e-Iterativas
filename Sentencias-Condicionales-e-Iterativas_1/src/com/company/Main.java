@@ -6,9 +6,20 @@ public class Main {
 
     public static void main(String[] args) {
 
+        MetodoFoo();
         NotaEstudiante();
         Precio();
         Mayor();
+
+    }
+
+    private static void MetodoFoo() {
+        String texto="foo";
+
+        for(int i=0; i<10; i++){
+            System.out.println(texto);
+        }
+
     }
 
     private static void NotaEstudiante() {
