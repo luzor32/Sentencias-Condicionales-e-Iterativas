@@ -3,6 +3,10 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("sentencias condicionales e iterativas");
+        String caract="*";
+        for(int i=0; i<7; i++){
+            System.out.println(caract);
+            caract+="*";
+        }
     }
 }
