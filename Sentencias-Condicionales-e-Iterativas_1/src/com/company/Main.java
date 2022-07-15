@@ -5,6 +5,10 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        NotaEstudiante();
+    }
+
+    private static void NotaEstudiante() {
         String nombre = "";
         double nota1 = 0, nota2 = 0, nota3 = 0;
         double prom_nota = 0;
