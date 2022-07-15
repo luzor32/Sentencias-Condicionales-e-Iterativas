@@ -6,6 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Triangulo3();
         Triangulo2();
         Triangulo1();
         Contar();
@@ -15,17 +16,43 @@ public class Main {
         Mayor();
     }
 
-    private static void Triangulo2() {
-        String caract="*";
+    private static void Triangulo3() {
+     String caract="*";
 
         for(int j=0; j<7; j++) {
             caract="";
-            for (int i = 0; i < 7-j; i++) {
+            for (int i = 0; i < 7-j-1; i++) {
+                caract += " ";
+            }
+            for (int i = 0; i < j+1; i++) {
                 caract += "*";
             }
 
             System.out.println(caract);
         }
+
+    }
+
+    private static void Triangulo2() {
+
+        String caract="*";
+
+        for(int j=0; j<7; j++) {
+            caract="";
+
+            for (int i = 0; i < 7-j-1; i++) {
+                caract += " ";
+            }
+            for (int i = 0; i < j+1; i++) {
+
+            for (int i = 0; i < 7-j; i++) {
+
+                caract += "*";
+            }
+
+            System.out.println(caract);
+        }
+
 
     }
 
@@ -149,6 +176,7 @@ public class Main {
         }else{
             System.out.println("los nuemeros son iguales");
         }
+
 
 
 
