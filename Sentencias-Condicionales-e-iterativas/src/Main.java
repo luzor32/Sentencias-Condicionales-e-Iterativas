@@ -3,6 +3,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+        ex3();
+    }
+
+    private static void ex3() {
         Scanner sc = new Scanner(System.in);
 
         System.out.print(" Ingresa el nombre del cursante: ");
