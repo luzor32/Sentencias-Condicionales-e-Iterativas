@@ -2,10 +2,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         ex2();
         ex1();
         ex3();
         ex4();
+        ex5();
 
     }
 
@@ -102,5 +104,14 @@ public class Main {
             System.out.println("foo");
         }
 
+    }
+          
+
+    private static void ex5() {
+        String texto ="";
+        for (int i = 0; i < 7; i++) {
+            texto +="*";
+            System.out.println(texto);
+        }
     }
 }
