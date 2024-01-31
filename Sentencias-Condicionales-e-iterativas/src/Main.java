@@ -5,6 +5,7 @@ public class Main {
         ex2();
         ex1();
         ex3();
+        ex4();
 
     }
 
@@ -90,6 +91,15 @@ public class Main {
             System.out.println("El cursante esta aprobado");
         } else if (promedio > 8 && promedio <= 10) {
             System.out.println("El cursante esta promocionado");
+        }
+
+
+        
+    }
+
+    private static void ex4() {
+        for (int i = 0; i < 10; i++) {
+            System.out.println("foo");
         }
 
     }
