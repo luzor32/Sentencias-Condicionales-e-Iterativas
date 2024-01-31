@@ -2,15 +2,34 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        ex2();
         ex1();
+        ex2();
         ex3();
         ex4();
         ex5();
         ex6();
+        ex7();
 
     }
 
+  
+
+    private static void ex1() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ingresa un numero entero: ");
+        int num1 = sc.nextInt();
+        System.out.print("Ingresa otro numero entero: ");
+        int num2 = sc.nextInt();
+        if (num1 > num2) {
+            System.out.println("El numero " + num1 + " es mayor que el numero " + num2);
+        } else if (num1 < num2) {
+            System.out.println("El numero " + num2 + " es mayor que el numero " + num1);
+        } else {
+            System.out.println("Los dos numeros son iguales");
+        }
+       
+    }
+    
     private static void ex2() {
         Scanner sc = new Scanner(System.in);
 
@@ -46,27 +65,10 @@ public class Main {
         System.out.println("---------------------------------------");
         System.out.println("El nombre del producto es: "+producto);
         System.out.println("El importe final es: "+precio_final);
-
-        
+       
     }
 
-    private static void ex1() {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Ingresa un numero entero: ");
-        int num1 = sc.nextInt();
-        System.out.print("Ingresa otro numero entero: ");
-        int num2 = sc.nextInt();
-        if (num1 > num2) {
-            System.out.println("El numero " + num1 + " es mayor que el numero " + num2);
-        } else if (num1 < num2) {
-            System.out.println("El numero " + num2 + " es mayor que el numero " + num1);
-        } else {
-            System.out.println("Los dos numeros son iguales");
-        }
 
-
-        
-    }
 
     private static void ex3() {
         Scanner sc = new Scanner(System.in);
@@ -93,17 +95,14 @@ public class Main {
             System.out.println("El cursante esta aprobado");
         } else if (promedio > 8 && promedio <= 10) {
             System.out.println("El cursante esta promocionado");
-        }
-
-
-        
+        }        
     }
 
+  
     private static void ex4() {
         for (int i = 0; i < 10; i++) {
             System.out.println("foo");
         }
-
     }
           
 
@@ -115,6 +114,7 @@ public class Main {
         }
     }
 
+  
     private static void ex6() {
         for (int i = 0; i < 7; i++) {
             String texto = "";
@@ -122,5 +122,19 @@ public class Main {
                 texto +="*";
             }
         }
-    }  
+    } 
+    
+  
+    private static void ex7() {
+        String texto = "";
+        for (int i = 0; i < 7; i++) {
+            String espacio="";
+            for (int j = 0; j < 7-i; j++) {
+                espacio +=" ";
+            }
+            texto +="*";
+            System.out.println(espacio+texto);
+        }
+
+    }
 }
