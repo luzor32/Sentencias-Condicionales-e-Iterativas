@@ -2,13 +2,49 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        ex1();
-        ex2();
-        ex3();
-        ex4();
-        ex5();
-        ex6();
-        ex7();
+        Scanner lector = new Scanner(System.in);
+        System.out.println("Seleccione una opcion: ");
+        System.out.println("Op. 1: ex1 ");
+        System.out.println("Op. 2: ex2 ");
+        System.out.println("Op. 3: ex3 ");
+        System.out.println("Op. 4: ex4 ");
+        System.out.println("Op. 5: ex5 ");
+        System.out.println("Op. 6: ex6 ");
+        System.out.println("Op. 7: ex7 ");
+        System.out.println("Op. 8: Salir ");
+
+        int option = lector.nextInt();
+        while (option != 8) {
+            if (option == 1) {
+                ex1();
+            } else if (option == 2) {
+                ex2();
+            } else if (option == 3) {
+                ex3();
+            } else if (option == 4) {
+                ex4();
+            } else if (option == 5) {
+                ex5();
+            } else if (option == 6) {
+                ex6();
+            } else if (option == 7) {
+                ex7();
+            }else {
+                System.out.println("Selecciono una opcion no valida");
+            }
+            System.out.println("--------------------------");
+            System.out.println("Seleccione una opcion: ");
+            System.out.println("Op. 1: ex1 ");
+            System.out.println("Op. 2: ex2 ");
+            System.out.println("Op. 3: ex3 ");
+            System.out.println("Op. 4: ex4 ");
+            System.out.println("Op. 5: ex5 ");
+            System.out.println("Op. 6: ex6 ");
+            System.out.println("Op. 7: ex7 ");
+            System.out.println("Op. 8: Salir ");
+            option = lector.nextInt();
+
+        }
 
     }
 
